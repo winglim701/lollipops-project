@@ -49,10 +49,22 @@ public class BasicApp {
 	*/
 	private static void requestNumOfLollipops() {
 		String input;
+		int output;
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("How many lollipops would you like " + user + "? ");
 		input = scanner.nextLine();
 		numOfLollipops = Integer.parseInt(input.trim());
 		System.out.println("Sounds like you would like " + (numOfLollipops - 3) + " lollipops!");
+		System.out.print("Now give me the number of lollipops" + user + "?");
+		String input1 = scanner.nextLine();
+		int numOfLollipops1 = Integer.parseInt(input1.trim());
+		System.out.print("Now give me the number of lollipops" + user + "?");
+		String input2 = scanner.nextLine();
+		int numOfLollipops2 = Integer.parseInt(input2.trim());
+		System.out.print("Now give me the number of lollipops" + user + "?");
+		String input3 = scanner.nextLine();
+		int numOfLollipops3 = Integer.parseInt(input3.trim());
+		System.out.println(
+				"Totally you have " + (output = numOfLollipops1 + numOfLollipops2 + numOfLollipops3) + " lollipops");
 	}
 }
