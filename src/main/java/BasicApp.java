@@ -49,22 +49,21 @@ public class BasicApp {
 	*/
 	private static void requestNumOfLollipops() {
 		String input;
-		int output;
+		double output;
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("How many lollipops would you like " + user + "? ");
 		input = scanner.nextLine();
 		numOfLollipops = Integer.parseInt(input.trim());
-		System.out.println("Sounds like you would like " + (numOfLollipops - 3) + " lollipops!");
-		System.out.print("Now give me the number of lollipops" + user + "?");
+		System.out.print("How many more lollipops were added in the in the afternoon by a generous guest" + user + "?");
 		String input1 = scanner.nextLine();
 		int numOfLollipops1 = Integer.parseInt(input1.trim());
-		System.out.print("Now give me the number of lollipops" + user + "?");
+		System.out.print("How many times the lollipops were multiplied by caring Crusty the Clown" + user + "?");
 		String input2 = scanner.nextLine();
 		int numOfLollipops2 = Integer.parseInt(input2.trim());
-		System.out.print("Now give me the number of lollipops" + user + "?");
+		System.out.print("how many children all shared the total lollipops by the end of the day" + user + "?");
 		String input3 = scanner.nextLine();
 		int numOfLollipops3 = Integer.parseInt(input3.trim());
-		System.out.println(
-				"Totally you have " + (output = numOfLollipops1 + numOfLollipops2 + numOfLollipops3) + " lollipops");
+		System.out.println("Each child has "
+				+ (output = (numOfLollipops + numOfLollipops1) * numOfLollipops2 / numOfLollipops3) + " lollipops");
 	}
 }
